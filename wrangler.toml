@@ -1,3 +1,9 @@
 name = "slash-create-worker-template"
 main = "src/index.ts"
 compatibility_date = "2023-10-22"
+
+[env.production.vars]
+WRANGLER_TEST_BINDING = "I do work in prod!!"
+
+[env.staging.vars]
+WRANGLER_TEST_BINDING = "I do work in dev!!"

@@ -3,6 +3,7 @@
   "description": "A template for slash-create with Cloudflare Workers",
   "author": "Snazzah",
   "main": "src/index.ts",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "wrangler dev",
@@ -13,15 +14,18 @@
     "lint:fix": "eslint --ext .ts . --fix"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20231025.0",
-    "@typescript-eslint/eslint-plugin": "^6.10.0",
-    "@typescript-eslint/parser": "^6.10.0",
-    "eslint": "^8.53.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.1",
-    "prettier": "^3.0.0",
-    "slash-create": "^6.0.1",
+    "@cloudflare/workers-types": "^4.20240620.0",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.14.1",
+    "eslint": "^9.5.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.3.2",
+    "slash-create": "github:KitsuneDev/slash-create#cf/worker_context",
     "slash-up": "^1.4.2",
-    "wrangler": "^3.15.0"
+    "wrangler": "^3.62.0"
+  },
+  "volta": {
+    "node": "18.20.3"
   }
 }
